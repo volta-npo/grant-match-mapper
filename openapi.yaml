@@ -1,0 +1,28 @@
+openapi: 3.1.0
+info:
+  title: "Grant Match Mapper API"
+  version: "1.0.0"
+  description: "Backend API for A grant-fit workspace that maps opportunities to a small organization’s facts, constraints, and readiness."
+servers:
+  - url: http://127.0.0.1:8787
+    description: Python backend
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Product identity and health status
+  /score:
+    post:
+      summary: Score evidence payload
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Release packet
+ 

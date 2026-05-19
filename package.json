@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "private": false,
   "type": "module",
-  "description": "A grant-fit workspace that maps opportunities to a small organization\u2019s facts, constraints, and readiness.",
+  "description": "A grant-fit workspace that maps opportunities to a small organization’s facts, constraints, and readiness.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test test/*.test.js",
@@ -12,7 +12,13 @@
     "certify": "npm run build && node --test test/v3.test.js",
     "test:all": "npm test",
     "test:python": "PYTHONPATH=backend/python python3 -m unittest discover -s backend/python/tests",
-    "test:backend": "npm run test:python"
+    "test:backend": "npm run test:python",
+    "clean": "rm -f src/*.js src/*.js.map src/*.d.ts test/*.js test/*.js.map test/*.d.ts",
+    "ci": "npm ci && npm test && npm run test:backend --if-present",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "docker:build": "docker build -t volta-oss/grant-match-mapper:local .",
+    "docker:run": "docker compose up --build",
+    "serve:python": "PYTHONPATH=backend/python python3 -m grant_match_mapper_backend.server"
   },
   "keywords": [
     "digital-equity",
