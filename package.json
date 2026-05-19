@@ -1,0 +1,35 @@
+{
+  "name": "@volta-oss/grant-match-mapper",
+  "version": "3.0.0",
+  "private": false,
+  "type": "module",
+  "description": "A grant-fit workspace that maps opportunities to a small organization’s facts, constraints, and readiness.",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 4173",
+    "validate": "node --test",
+    "certify": "node --test test/v3.test.js",
+    "test:all": "node --test"
+  },
+  "keywords": [
+    "digital-equity",
+    "finance-grants",
+    "local-first",
+    "oss",
+    "v3-production",
+    "volta"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volta-npo/11-grant-match-mapper.git"
+  },
+  "homepage": "https://volta-npo.github.io/11-grant-match-mapper/",
+  "bugs": {
+    "url": "https://github.com/volta-npo/11-grant-match-mapper/issues"
+  },
+  "author": "Volta OSS Division <volta.npo@gmail.com>",
+  "engines": {
+    "node": ">=20"
+  }
+}
