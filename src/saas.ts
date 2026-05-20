@@ -117,7 +117,7 @@ export const saas = {
       "stage": "Eligibility profile",
       "moment": "Capture mission, geography, budget, population, and constraints",
       "success": "Organization facts are evidence-backed",
-      "automation": "Profile completeness prompts"
+      "automation": "Profile completeness guidance"
     },
     {
       "stage": "Opportunity intake",
@@ -190,7 +190,7 @@ export const saas = {
       "cadence": "monthly"
     },
     {
-      "hypothesis": "Evidence prompts speed proposal kickoff",
+      "hypothesis": "Evidence guidance speeds proposal kickoff",
       "measure": "Missing criteria resolved",
       "target": "90% resolved before LOI",
       "cadence": "weekly"

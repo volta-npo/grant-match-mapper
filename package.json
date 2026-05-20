@@ -36,11 +36,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volta-npo/11-grant-match-mapper.git"
+    "url": "git+https://github.com/volta-npo/grant-match-mapper.git"
   },
-  "homepage": "https://volta-npo.github.io/11-grant-match-mapper/",
+  "homepage": "https://volta-npo.github.io/grant-match-mapper/",
   "bugs": {
-    "url": "https://github.com/volta-npo/11-grant-match-mapper/issues"
+    "url": "https://github.com/volta-npo/grant-match-mapper/issues"
   },
   "author": "Volta Open Source <volta.npo@gmail.com>",
   "engines": {
