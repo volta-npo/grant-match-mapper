@@ -940,3 +940,81 @@ main section > h3 + p {
   .panel, .hero-card, .toolbar, .score-card, .pill, .stat-grid > * { box-shadow: none !important; }
   main { width: 100%; padding: 0 1rem; }
 }
+
+/* ==========================================================
+ * SaaS console module — neo-brutalist surface
+ * Added to satisfy browser-smoke.test.js (.saas-console)
+ * while preserving the Volta neo-brutalist design language.
+ * ========================================================== */
+.saas-console {
+  margin-top: 1rem;
+  border: 2px solid var(--volta-dark);
+  background: var(--volta-surface);
+  box-shadow: 3px 3px 0 var(--volta-dark);
+  padding: 1rem;
+}
+.saas-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.saas-score {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.saas-score article {
+  border: 2px solid var(--volta-dark);
+  background: var(--volta-dark);
+  color: #ffffff;
+  padding: 1rem;
+  box-shadow: 3px 3px 0 var(--volta-accent);
+}
+.saas-score strong {
+  display: block;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: -0.04em;
+}
+.saas-score span {
+  display: block;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+}
+.saas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.saas-cards {
+  display: grid;
+  gap: 0.75rem;
+}
+.saas-cards article {
+  border: 2px solid var(--volta-dark);
+  background: var(--volta-surface);
+  box-shadow: 3px 3px 0 var(--volta-dark);
+  padding: 1rem;
+}
+.saas-cards article p {
+  margin: 0.35rem 0;
+}
+.saas-cards article strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.saas-cards article span,
+.saas-cards article small {
+  color: var(--volta-stone-500);
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  .saas-score,
+  .saas-grid { grid-template-columns: 1fr; }
+}
